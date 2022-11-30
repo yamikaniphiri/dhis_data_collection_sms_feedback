@@ -11,18 +11,6 @@ class SMSDashboard extends Component{
 
     }  
     async componentDidMount(){  
-        // get use groupm data
-        // github: omar-bakhsh
-
-
-        let num=993855050;
-    
-        let msg= "ejjeje";
-    
-        let name= "thuw";
-        
-        var win = window.open(`https://wa.me/${num}?text=I%27m%20api%20msg%20hello%20${name}%20friend%20${msg}`, '_blank');
-        // win.focus();
 
         let usersData = await Api.getUserGroup() 
 
